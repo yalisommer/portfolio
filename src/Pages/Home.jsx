@@ -8,7 +8,7 @@ function Home() {
       <section className="home-section">
         <h2>About Me</h2>
         <p>
-          Current Sophomore at Brown University studying mathematics & computer science. Interested in backend development, LLM integration, data science, computer vision, and creating the occasional pretty website.
+          Current Sophomore at Brown University studying mathematics & computer science. Interested in backend development, LLM integration, data science, computer vision, and designing/implementing the occasional pretty website (including this one).
         </p>
       </section>
 
