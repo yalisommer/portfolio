@@ -3,11 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 
 function Sidebar() {
   const location = useLocation();
-  const isSharkTracker = location.pathname.includes('/shark-tracker');
+  const isSharkTracker = location.pathname.includes('shark-tracker');
   const [isHovered, setIsHovered] = useState(false);
-
-  // Get the base path from Vite's env
-  const basePath = import.meta.env.BASE_URL || '/';
 
   return (
     <div 
@@ -22,10 +19,10 @@ function Sidebar() {
       )}
       <div className="sidebar-content">
         <nav>
-          <Link to={`${basePath}`}>
+          <Link to="/">
             <span className="link-text">Home</span>
           </Link>
-          <Link to={`${basePath}shark-tracker`}>
+          <Link to="/shark-tracker">
             <span className="link-text">Shark Tracker</span>
           </Link>
         </nav>
