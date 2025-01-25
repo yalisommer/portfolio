@@ -9,7 +9,7 @@ import './style.css'
 
 function App() {
   const location = useLocation();
-  const isSharkTracker = location.pathname === '/shark-tracker';
+  const isSharkTracker = location.pathname.includes('/shark-tracker');
 
   return (
     <div className="app" style={{ 
@@ -20,6 +20,8 @@ function App() {
       <Sidebar />
       <main>
         <Routes>
+          <Route path="/portfolio" element={<Home />} />
+          <Route path="/portfolio/shark-tracker" element={<SharkTrackerApp />} />
           <Route path="/" element={<Home />} />
           <Route path="/shark-tracker" element={<SharkTrackerApp />} />
         </Routes>
